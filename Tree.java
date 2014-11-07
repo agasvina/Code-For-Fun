@@ -49,4 +49,15 @@ public class Tree {
         return validate(root.left, min, root.value)
                 && validate(root.right, root.value, max);
     }
+    
+    
+        //get the leftmost element of the three
+    public  int getMin() {
+        int result = this.value;
+        if(this.left != null) {
+            return this.left.getMin();
+        }
+        return result;
+    }
+
 }
