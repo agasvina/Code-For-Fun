@@ -59,5 +59,16 @@ public class Tree {
         }
         return result;
     }
+    
+    //search the element of binary tree
+        public boolean search (int x) {
+        if(this.value == x) {
+            return true;
+        } else if ( this.value > x) {
+            return left.search(x);
+        } else {
+            return right.search(x);
+        }
+    }
 
 }
