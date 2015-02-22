@@ -1,0 +1,119 @@
+.ss {
+    position: absolute;
+    width: 64px;
+}
+
+.ss_white {
+    position: absolute;
+    width: 64px;
+}
+
+.fb {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.tw {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.in {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.gp {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.kl01 {
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    /*float: left;*/
+    margin: 5px;
+}
+
+.kl02 {
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    /*float: l  eft;*/
+    /*margin: 5px;*/
+    margin-right: 30px;
+    margin-left: -20px;
+}
+
+.kl03 {
+    width: 50px;
+    /*height: 100%;*/
+    display: inline-block;
+    /*float: left;*/
+    /*margin: 5px;*/
+    margin-right: 30px;
+    margin-left: -20px;
+}
+
+.ks {
+    width: 50px;
+    /*height: 20%;*/
+    display: inline-block;
+    /*float: left;*/
+    /*margin: 5px;*/
+    /*margin-left: -5px;*/
+    /*margin-right: 10px;*/
+}
+
+.key {
+    position: absolute;
+    /*width: 64px;*/
+    /*height: 60%;*/
+}
+
+.key_bloody {
+    position: absolute;
+    /*width: 64px;*/
+    /*height: 60%;*/
+}
+
+.feedback {
+    position: absolute;
+    /*display: none;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#levelEndMap {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+#mapManuscript {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 220px;
+}
+
+#nextManuscript {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 370px;
+}
+
+#scoreDiv {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 980px;
+}

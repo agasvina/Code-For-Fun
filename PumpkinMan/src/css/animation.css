@@ -1,0 +1,39 @@
+
+/*	Animations
+------------------------------------------ */
+
+body {
+	-webkit-animation: bg-move 8s ease-out forwards;
+}
+
+.mike {
+	-webkit-animation: mike-move 0s 0s ease-out forwards,
+	                   mike-float 3.2s infinite;
+}
+
+
+/*	Keyframes - WebKit only
+------------------------------------------ */
+
+
+@-webkit-keyframes mike-move {
+	0% { left: 40%; }
+	100% {left: 40%; }
+
+}
+
+@-webkit-keyframes mike-float {
+	50% { -webkit-transform: rotateZ(5deg) translateY(-5px); }
+}
+
+
+
+
+
+
+
+
+
+
+
+

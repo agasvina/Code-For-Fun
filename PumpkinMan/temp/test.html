@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="src/lib/jquery.min.js"></script>
+    <script src="src/lib/jquery-ui.min.js"></script>
+    <script src="src/js/game.js"></script>
+    <script src="src/js/play.js"></script>
+    <script src="src/js/level.js"></script>
+    <script src="src/lib/pixi.js"></script>
+    <script src="src/lib/howler.js"></script>
+    <script src="src/lib/soundjs-0.5.2.min.js"></script>
+	<script src="src/js/pumpkinMan.js"></script>
+	<script src="src/js/excanvas.js"></script>
+
+    <title>Pumpkin Music</title>
+    <!---COPY THIS FOR USE IN YOUR OWN PROJECTS-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="src/css/key.css">
+    <link rel="stylesheet" type="text/css" href="src/css/map.css">
+    <link rel="stylesheet" type="text/css" href="src/css/level.css">
+    <!--<link href="src/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
+        <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+<div id="levels">
+	<img id="mapImage" src="assets/images/map/Level_01.png" />
+
+	<img id="lp1" level="1" class="levelPumpkin" src="assets/images/map/pump_01.png" />
+	<img id="lp2" level="2" class="levelPumpkin" src="assets/images/map/pump_02.png" />
+	<img id="lp3" level="3" class="levelPumpkin" src="assets/images/map/pump_03.png" />
+	<img id="lp4" level="4" class="levelPumpkin" src="assets/images/map/pump_04.png" />
+</div>
+    
+<div id="game" class="gameScenario">
+
+	<img id="backLevel" class="backGroundPumpkin" src="assets/images/backgrounds/level1.jpg" />
+
+	<div id="canvasDiv"><img id="backMap" src="assets/images/map.png" /></div> 
+    <div id="C2" class="kl01"><img class="key_bloody" src="assets/images/keyLarge01_blood.png" /><img class="key" src="assets/images/keyLarge01.png" /></div>
+    <div id="Cs2" class="ks"><img class="key_bloody" src="assets/images/keyboardSmall_blood.png" /><img class="key" src="assets/images/keyboardSmall.png" /></div>
+    <div id="D2" class="kl02"><img class="key_bloody" src="assets/images/keyLarge02_blood.png" /><img class="key" src="assets/images/keyLarge02.png" /></div>
+    <div id="Ds2" class="ks"><img class="key_bloody" src="assets/images/keyboardSmall_blood.png" /><img class="key" src="assets/images/keyboardSmall.png" /></div>
+    <div id="E2" class="kl03"><img class="key_bloody" src="assets/images/keyLarge03_blood.png" /><img class="key" src="assets/images/keyLarge03.png" /></div>
+    <div id="F2" class="kl01"><img class="key_bloody" src="assets/images/keyLarge01_blood.png" /><img class="key" src="assets/images/keyLarge01.png" /></div>
+    <div id="Fs2" class="ks"><img class="key_bloody" src="assets/images/keyboardSmall_blood.png" /><img class="key" src="assets/images/keyboardSmall.png" /></div>
+    <div id="G2" class="kl02"><img class="key_bloody" src="assets/images/keyLarge02_blood.png" /><img class="key" src="assets/images/keyLarge02.png" /></div>
+    <div id="Gs2" class="ks"><img class="key_bloody" src="assets/images/keyboardSmall_blood.png" /><img class="key" src="assets/images/keyboardSmall.png" /></div>
+    <div id="A2" class="kl02"><img class="key_bloody" src="assets/images/keyLarge02_blood.png" /><img class="key" src="assets/images/keyLarge02.png" /></div>
+    <div id="As2" class="ks"><img class="key_bloody" src="assets/images/keyboardSmall_blood.png" /><img class="key" src="assets/images/keyboardSmall.png" /></div>
+    <div id="B2" class="kl03"><img class="key_bloody" src="assets/images/keyLarge03_blood.png" /><img class="key" src="assets/images/keyLarge03.png" /></div>
+    <div id="Box" class="amazonBox"><img class="mike"  src="img/amazonBox.png" /></div>
+    <div class="feedback">
+        <h1 id="feedbackString"></h1>
+    </div>
+    <div id="levelEnd">
+        <img id="levelEndMap" src="assets/images/manuscript/manu.png" />
+        <img id="mapManuscript" src="assets/images/manuscript/map_manu.png" />
+        <img id="nextManuscript" src="assets/images/manuscript/next.png" />
+    </div>
+</div>
+</body>
+
+<!-------------------------------------------------------------------------------->
+
+</html>
