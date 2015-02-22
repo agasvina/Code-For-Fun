@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+#centerframe {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.back {
+	width: 800px;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+}
+.back img {
+	width: 100%;
+}
+
+.jet {
+	width: 400px;
+	position: absolute;
+	top: 55%;
+	left: -15%;
+	-webkit-transform: rotateZ(-5deg);
+	-moz-transform: rotateZ(-5deg);
+	-ms-transform: rotateZ(-5deg);
+	transform: rotateZ(-5deg);
+}
