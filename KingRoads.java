@@ -19,6 +19,48 @@ public class KingRoads {
 		System.out.println(solution(h, a, b));
 		
 	}
+
+	//added the solution to the second problem of Top Coder: 
+	//String hatred!!
+	public static int getNumber(String s) {
+		//REPRESENT CHAR INT INTEGER WAY. 
+		//A == 65 B = 66 ? = 63
+		int count = 0;
+		int [] dummy = new int[s.length()];
+		for(int x = 0; x < s.length(); x++) {
+			dummy[x] = s.charAt(x);
+		}
+		if (s.length() < 2) {
+			return 0;
+		} else {
+			int i1 = 0;
+			int i2 = 1;
+			for (i2 = 1; i2 < s.length(); i2++) {
+				if((dummy[i1] == dummy[i2]) && dummy[i2] != 63) {
+					count++;
+					i1++;
+					continue;
+				}
+				if(dummy[i1] == 63) {
+					i1++;
+					continue;
+				}
+				if(dummy[i2] == 63) {
+					if(dummy[i1] == 65) {
+						dummy[i2] = 66;
+					} else if (dummy[i1] == 66) {
+						dummy[i2] = 65;
+					}	
+				}
+				i1++;
+				
+			}
+		}
+		
+		return count ;
+	}
+	
+
 	
 	public static boolean solution(int h, int[] a, int[] b) {
 		//lets do some initialization to the nodes.
