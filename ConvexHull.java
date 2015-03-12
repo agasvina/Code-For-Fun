@@ -80,7 +80,7 @@ public class ConvexHull {
 				}
 		}
 		//find the lowest point of the remaining 
-		while(true) {
+		while(points.size() <temp.size()) {
 			tempD.clear();
 			for(int i =0; i < temp.size();i++) {
 				if(!explored[temp.get(i).idx]) {
