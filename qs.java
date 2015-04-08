@@ -93,3 +93,34 @@ public class CalculateUsingJavascript{
 
 
 }//eoc
+
+
+/*
+First of all you can convert the Base 10 to any number using this: method
+    Integer.toString(int i,int radix); 
+        Isn't it really cool or what????? I just realize that 
+        there is a build in function for this.. 
+        I am so happy.... 
+        
+        And then if you really neeed to convert any base to base 10..
+        You can simply use this method below... 
+        Integer.parseInt(int i, int radix);
+        
+        Note: radix is base.... 
+*/
+public class ComparatorDfs implements Comparator<Point> {
+    
+    @Override
+    public int compare(Point o1, Point o2) {
+        if (o1.dfsHeuristic < o2.dfsHeuristic) {
+            return 1;
+        } else if( o1.dfsHeuristic > o2.dfsHeuristic) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+    
+}
+
+
