@@ -38,3 +38,42 @@ public class qs {
     }    
 
 }
+
+
+
+public static String longestSubstring(String x, int lh) {
+		Map<Character, Integer> temp = new HashMap<>();
+		ArrayList<Integer> arr = new ArrayList<>();
+		arr.add(0);temp.put(x.charAt(0), 1);
+		int sidx = 0; int max = 0;
+		for(int i = 0; i < x.length(); i++) {
+			if(x.charAt(arr.get(arr.size()-1)) != x.charAt(i) ) {
+				arr.add(i);
+				if(temp.get(x.charAt(i)) == null){
+					temp.put(x.charAt(i), 1);
+				} else {
+					temp.put(x.charAt(i), temp.get(x.charAt(i))+1);
+				}
+			}
+			if(temp.size() > lh) {
+				int l = i -  arr.get(0);
+				if(max < l) {
+					sidx = arr.get(0);
+					max = l;
+				}
+				char t = x.charAt(arr.get(0));
+				 if(temp.get(t) == 1) {
+					 temp.remove(t);
+				} else {
+					temp.put(t, temp.get(t)-1);
+				}
+				arr.remove(0);
+				
+			}
+		}
+		if(max ==0 && sidx == 0 && temp.size() == lh) return x;
+		return x.substring(sidx, sidx+max);
+	}
+	
+	Priorityqueue
+	
